@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/Rental-Info-2.css">
+
+    <!-- bootstrap 5 -->
+    <meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0"> 
+	<title>Bootstrap5 Sidebar</title> 
+	<link href= 
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min./css"
+		rel="stylesheet"
+		integrity= 
+        "sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+		crossorigin="anonymous"> 
+	<link rel="stylesheet"
+		href="style.css"> 
+	<link rel="stylesheet" href= 
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min./css"
+		integrity= 
+        "sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+	<div class="container-fluid p-0 d-flex h-100 main-color"> 
+		<div class="main-color flex-fill"> 
+			<div class="p-4"> 
+				
+				<div class="container-sm main-color text-left">
+                    <div class="row">
+                      <div class="col col-1 rounded h-auto">
+						
+							<h1 class="text-white fw-bolder rental-padding">Rental Info</h1>
+
+						<p class="text-secondary padding mt-3">Please select your rental Info</p>
+
+						<h5 class="padding text-white mt-4 fw-bold">Pick - Up Date & Time</h5>
+						<p class="text-white padding">Please select the date and time that you will like to pick up the car</p>
+						<div class="d-flex date-gap text-white padding mt-4 time">
+							<div class="d-flex flex-column">
+								<p>Date</p>
+								<input type="date" class="input-style-2 rounded" required placeholder="Select your Date">
+							</div>
+							
+							<div class="d-flex flex-column padding-top">
+								<p>Enter Time</p>
+								<input type="time" class="input-style rounded time-input" required placeholder="Select your Time">
+							</div>
+						</div>
+
+						<h5 class="padding text-white mt-5 fw-bold">Pick - Up Location</h5>
+						<p class="padding text-white mt-2">The default pick-up location for this car is <b>Ikeja shopping Mall</b></p>
+						<div class="d-flex padding text-white space-btw-2 mt-2">
+							<img src="./assets/img/check.png" alt="" class="box-size">
+							<h5>Check this box to input your preferred pick-up location (at an extra cost)</b></h5>
+						</div>
+                        <div class="d-flex mt-2 input-column center">
+							<input type="number" class="billing-input-style rounded ms-5 me-3 bill-inp" required placeholder="Input your location">
+							<p class="text-white mt-3">OR</p>
+							<div class="d-flex">
+							<input type="text" class="input-style rounded time-input ms-3 bg-primary" required placeholder="Use My Location">
+							<img src="./assets/img/location-img.png" alt="" class="ms-3 h-100">
+							</div>
+                        </div>
+
+						<h5 class="padding text-white mt-5 fw-bold">Drop - Off Date & Time</h5>
+						<p class="text-white padding">Please select the date and time you will return the car</p>
+						<div class="d-flex date-gap text-white padding mt-4 time">
+							<div class="d-flex flex-column">
+								<p>Date</p>
+								<input type="date" class="input-style-2 rounded" required placeholder="Select your Date">
+							</div>
+							
+							<div class="d-flex flex-column padding-top">
+								<p>Enter Time</p>
+								<input type="time" class="input-style rounded time-input" required placeholder="Select your Time">
+							</div>
+						</div>
+
+						<h5 class="padding text-white mt-5 fw-bold">Drop-off Location</h5>
+						<p class="padding text-white mt-2">The default pick-up location for this car is <b>Ikeja shopping Mall</b></p>
+						<div class="d-flex padding text-white space-btw-2 mt-2">
+							<img src="./assets/img/check.png" alt="" class="box-size">
+							<h5>Check this box to input your preferred pick-up location (at an extra cost)</b></h5>
+						</div>
+						<div class="d-flex mt-2 input-column">
+								<input type="number" class="billing-input-style rounded ms-5 me-3 bill-inp" required placeholder="Input your location">
+								<p class="text-white mt-3">OR</p>
+								<div class="d-flex">
+								<input type="text" class="input-style rounded time-input ms-3 bg-primary" required placeholder="Use My Location">
+								<img src="./assets/img/location-img.png" alt="" class="ms-3 h-100">
+								</div>
+						</div>
+
+						<h5 class="padding text-white mt-5 fw-bolder">Duration</h5>
+						<p class="text-white padding">Length of Rental</p>
+
+						<div class="d-flex text-white padding pb-5 mt-3">
+							<div class="d-flex flex-column">
+								<p>Number of Days</p>
+								<input type="number" class="billing-input-style rounded" required placeholder="Select number of days">
+							</div>
+						</div>
+                      </div>
+
+
+                      <div class="col col-2 rounded pt-3">
+						<img src="./assets/img/car.png" alt="" class="w-100">
+						<img src="./assets/img/reviews.png" alt="" class="pt-3 w-75">
+
+						<div class="d-flex mt-3 space-btw">
+							<img src="./assets/img/first.png" alt="" class="icon-style">
+							<img src="./assets/img/second.png" alt="" class="icon-style">
+							<img src="./assets/img/third.png" alt="" class="icon-style">
+							<img src="./assets/img/fourth.png" alt="" class="icon-style">
+						</div>
+
+						<div class="d-flex justify-content-between mt-5">
+							<p class="text-secondary">Sub - Total</p>
+							<p class="text-white"><b>N5000/</b>DAY</p>
+						</div>
+
+						<div class="d-flex justify-content-between">
+							<p class="text-secondary">No of days</p>
+							<p class="text-white"><b>3 </b>DAYS</p>
+						</div>
+
+						<div class="d-flex justify-content-between">
+							<p class="text-secondary">Charges</p>
+							<p class="text-white"><b>N2000</b></p>
+						</div>
+
+						<div class="d-flex justify-content-between">
+							<p class="text-secondary">Tax</p>
+							<p class="text-white"><b>N500</b></p>
+						</div>
+
+						<div class="d-flex justify-content-between">
+							<p class="text-secondary">Preferred Pick up</p>
+							<p class="text-white"><b>N1000</b></p>
+						</div>
+
+						<div class="d-flex justify-content-between">
+							<p class="text-secondary">Preferred Drop off</p>
+							<p class="text-white"><b>N1000</b></p>
+						</div>
+
+						<div class="d-flex justify-content-between text-white">
+							<p><b>Total Price</b></p>
+							<h5><b>=</b></h5>
+							<h4><b>N19,500</b></h4>
+						</div>
+
+                      </div>
+                    </div>
+                  </div> 
+
+				  <div class="container-sm main-color text-left mt-4">
+                    <div class="row">
+
+                      <div class="col col-1 rounded h-auto">
+
+						<h1 class="text-white fw-bolder rental-padding">Rental Info</h1>
+
+						<h5 class="padding text-white mt-4 fw-bolder">Duration</h5>
+						<p class="text-white padding">Length of Rental</p>
+
+						<div class="d-flex padding space-btw-3">
+							<button class="bg-white text-primary rounded px-2 py-2"><h5>Days</h5></button>
+							<button class="text-white rounded px-2 py-2"><h5>Hours</h5></button>
+						</div>
+
+						<div class="d-flex text-white padding pb-5 mt-3">
+							<div class="d-flex flex-column">
+								<p>Hours</p>
+								<input type="time" class="rental-input-style rounded" required placeholder="Select number of days">
+							</div>
+						</div>
+                      </div>
+                  </div>
+
+			</div>
+		</div> 
+	</div>
+    
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- aos amimation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- initialize aos -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- bootstrap masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!-- custom script -->
+    <script src="swiper.js"></script>
+</body>
+</html>

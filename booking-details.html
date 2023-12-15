@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/booking-details.css">
+
+    <!-- bootstrap 5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+				initial-scale=1.0">
+    <title>Bootstrap5 Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min./css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min./css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div class="container-fluid p-0 d-flex h-100 main-color">
+        <div class="">
+            <div id="bdSidebar" class="sidecard d-flex flex-column mt flex-shrink-1 text-white offcanvas-md offcanvas-start">
+                <img src="./assets/img/Ride-ready1.png" alt="" style="padding: 30px; width: 100%; margin-left: 10px" />
+                <ul class="mynav nav nav-pills flex-column mb-auto ms-4 pt-3 gap-3">
+                    <li class="nav-item mb-1 fs-6">
+                        <a href="#" class="active">
+                            <!-- <img src="./assets/img/dashboard-icon.png" alt="" style="margin: 3px; width: 10px" /> -->
+                            <i class="bx bxs-layout fs-5 ms-2"></i> Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <a href="#">
+                            <!-- <img src="./assets/img/vehicle-icon.png" alt="" style="margin: 3px; width: 11px" /> -->
+                            <i class="bx bxs-car fs-5"></i> Vehicle
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="">
+                            <!-- <img src="./assets/img/booking-icon.png" alt="" style="margin: 3px; width: 9px" /> -->
+                            <i class="bx bxs-book-alt fs-5"></i> My Bookings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="number">
+                            <div class="numberCircle">7</div>
+                            <img class="" src="./assets/img/mail-unread-fill.png" alt="" style="margin: 3px; width: 20px" /> Inbox
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#">
+                            <!-- <img src="./assets/img/help-icon.png" alt="" style="margin: 3px; width: 12px" /> -->
+                            <i class="bx bxs-help-circle fs-5"></i> Support
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item nav-item mb-1">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#settings" aria-expanded="false" aria-controls="settings">
+                            <!-- <img src="./assets/img/settings-5-fill.png" alt="" style="margin-left: 1px; width: 12px" /> -->
+                            <i class="bx bxs-cog fs-5"></i>
+
+                            <span class="topic">Settings </span>
+                        </a>
+                        <ul id="settings" class="sidebar-dropdown list-unstyled collapse pt-4 px-lg-4" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    <i class="fas fa-sign-in-alt pe-2"></i>
+                                    <span class="topic">Account</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex my-5 px-4">
+                    <button class="btn-border">
+				  <a href="#" class="sidebar-link text-decoration-none text-white">
+					<div class="gap-1 d-flex align-items-center">
+					  <div>
+						<i class="bx bxs-log-out fs-4 pt-1"></i>
+					  </div>
+					  <div class="d-flex justify-content-center align-items-center">
+						<p class="mb-0 fs-8 pb-0 ms-2">Log Out</p>
+					  </div>
+					</div>
+				  </a>
+				</button>
+                </div>
+            </div>
+
+            <div class="w-100 d-flex justify-content-end" style="height: 100vh; z-index: 100">
+                <div class="wid d-flex align-items-start">
+                    <div class="p-2 d-md-none d-flex text-white">
+                        <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+                            <i class="fa-solid fa-bars nav-icon position-absolute ps"></i>
+                        </a>
+                    </div>
+                    <nav class="d-none d-lg-flex d-md-flex d-flex justify-content-evenly gap-5 align-items-center py-4 position-fixed w-75 ">
+                        <!-- <div class="back-nav ">
+							<a href="./users-login.html">
+	
+							</a>
+						</div> -->
+                        <div class="d-flex search-bar align-items-center rounded-pill text-white ms-0">
+                            <input type="text" class="w-100 search-input py-2 px-2 text-white" placeholder="Search a car" />
+                            <img class="me-3 bg-transparent" src="./assets/img/search-normal.png" alt="">
+                        </div>
+                        <div class="d-flex gap-nav justify-content-between align-items-center ms-5">
+                            <div class="p-2 rounded-circle bell ms-5 me-3">
+                                <a href="#"><i class='bx bxs-filter-alt fs-5 text-white pt-1'></i></a>
+                            </div>
+                            <div class="p-1 rounded-circle bell me-3">
+                                <a href="#"><i class='bx bxs-bell fs-2 text-white '></i></a>
+                            </div>
+                            <div class="rounded-circle bell" style="margin-right: -125px;">
+                                <img src="./assets/img/my-booking-details-img/dp.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </nav>
+
+                    <main class="pt-5 px-sm-4" style="height: 100vh">
+                        <div class="main-color flex-fill">
+                            <div class="p-4">
+                                <!-- <div class="d-flex justify-content-between">
+									<nav style="--bs-breadcrumb-divider:'>';font-size:14px" class="mt-3">
+										<ol class="breadcrumb"> 
+											<li class="breadcrumb-item mb-4">    
+												<a href="" class="previous"><i class="bi bi-chevron-left fs-5"></i>
+													<li class="previous-style">Back</li></a> 
+											</li> 
+										</ol> 
+									</nav>
+				
+									<span class="mt-2">
+										<input type="search" placeholder="Search here" class="search-box px-5 py-2 rounded-pill">
+										<i class="bi bi-search fs-5 text-white"></i>
+									</span>
+				
+									<div class="mt-2 profile-gap d-flex">
+										<a href="#"><div class="mt-2"><i class="bi bi-bell-fill fs-5 text-white notfy-border"></i></div></a>
+										<a href="#"><img src="./assets/img/profile.png" alt="" class="profile-style"></a>
+									</div>
+								</div> -->
+
+                                <div class="container-sm main-color text-left">
+                                    <div class="row">
+                                        <div class="col col-1 rounded col-1-height">
+
+                                            <div class="d-flex">
+                                                <h1 class="text-white fw-bolder p-5 pb-0 rental-padding">Rental Info</h1>
+                                            </div>
+
+                                            <p class="text-secondary px-5 mt-3">Please select your rental Info</p>
+
+                                            <h5 class="px-5 text-white mt-4 fw-bold">Pick - Up Date & Time</h5>
+                                            <p class="text-white px-5">Please select the date and time that you will like to pick up the car</p>
+                                            <div class="d-flex date-gap text-white padding px-5 mt-4 time">
+                                                <div class="d-flex flex-column">
+                                                    <p>Date</p>
+                                                    <input type="date" class="input-style-2 rounded" required placeholder="Select your Date">
+                                                </div>
+
+                                                <div class="d-flex flex-column padding-top">
+                                                    <p>Enter Time</p>
+                                                    <input type="time" class="input-style rounded time-input" required placeholder="Select your Time">
+                                                </div>
+                                            </div>
+
+                                            <h5 class="px-5 text-white mt-5 fw-bold">Pick - Up Location</h5>
+                                            <p class="px-5 text-white mt-2">The default pick-up location for this car is <b>Ikeja shopping Mall</b></p>
+                                            <div class="d-flex px-5 text-white space-btw-2 mt-2">
+                                                <input type="checkbox" class="box-size">
+                                                <h5>Check this box to input your preferred pick-up location (at an extra cost)</b>
+                                                </h5>
+                                            </div>
+
+                                            <h5 class="px-5 text-white mt-5 fw-bold">Drop - Off Date & Time</h5>
+                                            <p class="text-white px-5">Please select the date and time you will return the car</p>
+                                            <div class="d-flex date-gap text-white padding px-5 mt-4 time">
+                                                <div class="d-flex flex-column">
+                                                    <p>Date</p>
+                                                    <input type="date" class="input-style-2 rounded" required placeholder="Select your Date">
+                                                </div>
+
+                                                <div class="d-flex flex-column padding-top">
+                                                    <p>Enter Time</p>
+                                                    <input type="time" class="input-style rounded time-input" required placeholder="Select your Time">
+                                                </div>
+                                            </div>
+
+                                            <h5 class="px-5 text-white mt-5 fw-bold">Drop-off Location</h5>
+                                            <p class="px-5 text-white mt-2">The default pick-up location for this car is <b>Ikeja shopping Mall</b></p>
+
+                                            <div class="d-flex px-5 text-white space-btw-2 mt-2">
+                                                <input type="checkbox" class="box-size">
+                                                <h5>Check this box to input your preferred drop-off location (at an extra cost)</b>
+                                                </h5>
+                                            </div>
+
+                                            <h5 class="px-5 text-white mt-5 fw-bolder">Duration</h5>
+                                            <p class="text-white px-5">Length of Rental</p>
+
+                                            <div class="d-flex px-5 space-btw-3">
+                                                <button class="bg-white text-primary rounded p-1 pt-2"><h5>Days</h5></button>
+                                                <button class="text-white hour-col rounded p-1 pt-2"><h5>Hours</h5></button>
+                                            </div>
+
+                                            <div class="d-flex text-white px-5 pb-5 mt-3">
+                                                <div class="d-flex flex-column">
+                                                    <p>Number of Days</p>
+                                                    <input type="number" class="billing-input-style rounded" required placeholder="Select number of days">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col col-2 rounded pt-3">
+                                            <img src="./assets/img/car.png" alt="" class="w-100">
+                                            <img src="./assets/img/reviews.png" alt="" class="pt-3 w-75">
+
+                                            <div class="d-flex mt-3 space-btw">
+                                                <img src="./assets/img/first.png" alt="" class="icon-style">
+                                                <img src="./assets/img/second.png" alt="" class="icon-style">
+                                                <img src="./assets/img/third.png" alt="" class="icon-style">
+                                                <img src="./assets/img/fourth.png" alt="" class="icon-style">
+                                            </div>
+
+                                            <div class="d-flex justify-content-between mt-5">
+                                                <p class="text-secondary">Sub - Total</p>
+                                                <p class="text-white"><b>N5000/</b>DAY</p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-secondary">No of days</p>
+                                                <p class="text-white"><b>3 </b>DAYS</p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-secondary">Charges</p>
+                                                <p class="text-white"><b>N2000</b></p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-secondary">Tax</p>
+                                                <p class="text-white"><b>N500</b></p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-secondary">Preferred Pick up</p>
+                                                <p class="text-white"><b>N0.00</b></p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-secondary">Preferred Drop off</p>
+                                                <p class="text-white"><b>N0.00</b></p>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between text-white">
+                                                <p><b>Total Price</b></p>
+                                                <h5><b>=</b></h5>
+                                                <h4><b>N7,500</b></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container-sm main-color text-left mt-4">
+                                    <div class="row">
+
+                                        <div class="col col-1 rounded h-auto">
+
+                                            <h1 class="text-white fw-bolder p-5 pb-0 rental-padding">Billing Info</h1>
+
+                                            <p class="text-secondary px-5 mt-3">Please select your billing Info </p>
+
+                                            <div class="d-flex justify-content-between text-white px-5 padding time">
+                                                <div class="d-flex flex-column lh-1">
+                                                    <p>Full Name</p>
+                                                    <input type="text" class="billing-input-style rounded" required placeholder="Enter your name">
+                                                </div>
+
+                                                <div class="d-flex flex-column lh-1 padding-top">
+                                                    <p>Phone Number</p>
+                                                    <input type="text" class="billing-input-style rounded" required placeholder="Phone Number">
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex text-white px-5 py-4">
+                                                <div class="d-flex flex-column lh-1 padding-top">
+                                                    <p>Address</p>
+                                                    <input type="text" class="input-style-3 rounded" required placeholder="Address">
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex justify-content-between text-white px-5 mb-5 padding time">
+                                                <div class="d-flex flex-column lh-1 padding-top">
+                                                    <p>Town/City</p>
+                                                    <input type="text" class="billing-input-style rounded" required placeholder="Enter your city">
+                                                </div>
+
+                                                <div class="d-flex flex-column lh-1 padding-top">
+                                                    <p>State</p>
+                                                    <input type="text" class="billing-input-style rounded" required placeholder="State">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center my-5 button-gap">
+                                            <a href="#"><button class="text-white text px-5 py-2 main-color rounded mt-1 pt-3 previous-btn"><h5>Previous</h5></button></a>
+                                            <a href="#"><button class="text-white px-5 py-2 bg-primary rounded border-0 pt-3 proceed-btn mt-1"><h5>Proceed</h5></button></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </main>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- bootstrap script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- aos amimation js -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- initialize aos -->
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- bootstrap masonry -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+        <!-- custom script -->
+        <script src="swiper.js"></script>
+</body>
+
+</html>
